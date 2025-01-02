@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '27111655'))
+API_HASH = environ.get('API_HASH', '02b37606c933fd06c0407dcd9f99a615')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7794485133:AAHgYXOQT4PgNUHlJpuKTaTX91Ls0iu4Tg0")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -33,20 +33,20 @@ CODE = (environ.get('CODE', 'https://graph.org/file/e419f801841c2ee3db0fc.jpg'))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1505847875
 6479526351 1577166444 6626261440 7252639965').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()] #Channel id for auto indexing ( make sure bot is admin )
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001970548842')) #Log channel id ( make sure bot is admin )
-DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1001970548842')) #Notification of those who verify will be sent to your channel. Enter the ID of the channel you want to send notification to here.
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1001970548842')) # add premium logs channel id
-auth_channel = environ.get('AUTH_CHANNEL', '') #Channel / Group Id for force sub ( make sure bot is admin )
-DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002474691060').split()]
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '') # support group id ( make sure bot is admin )
-reqst_channel = environ.get('REQST_CHANNEL_ID', '') # request channel id ( make sure bot is admin ).
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002293028039')) #Log channel id ( make sure bot is admin )
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002293028039')) #Notification of those who verify will be sent to your channel. Enter the ID of the channel you want to send notification to here.
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002293028039')) # add premium logs channel id
+auth_channel = environ.get('AUTH_CHANNEL', '-1002258420114') #Channel / Group Id for force sub ( make sure bot is admin )
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002354952485').split()]
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002351224070') # support group id ( make sure bot is admin )
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002367728669') # request channel id ( make sure bot is admin ).
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "cluster")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Deendayal_files')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://dinoflix44:Nirav1234@cluster0.2isxw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://dinoflix44:Nirav1234@cluster0.2isxw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "dinoflix44")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'tg_files')
 
 # index movie Notification & update channel 
 DEENDAYAL_MOVIE_UPDATE_NOTIFICATION = bool(environ.get('DEENDAYAL_MOVIE_UPDATE_NOTIFICATION', False))  # NOTIFICATION On ( True ) / Off ( False )
@@ -57,8 +57,8 @@ CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla
 # Verify
 VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
 DEENDAYAL_VERIFY_EXPIRE = int(environ.get('DEENDAYAL_VERIFY_EXPIRE', 24)) # Add time in hours
-DEENDAYAL_VERIFIED_LOG = int(environ.get('DEENDAYAL_VERIFIED_LOG', '-1002370988072')) #Log channel id ( make sure bot is admin )
-HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/Deenu_dhakad') # How to open tutorial link for verification
+DEENDAYAL_VERIFIED_LOG = int(environ.get('DEENDAYAL_VERIFIED_LOG', '-1002293028039')) #Log channel id ( make sure bot is admin )
+HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/+i83vXOkM08YwOTA9') # How to open tutorial link for verification
 
 # Shortner 
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
