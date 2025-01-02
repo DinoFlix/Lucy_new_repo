@@ -62,16 +62,16 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/+i83vXOkM08YwOTA9') #
 
 # Shortner 
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shortxlinks.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '820b18ededb2ed6cf4de90d828e900add9a1a60d')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Deenu_dhakad') # Tutorial video link for opening shortlink website 
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'instantearn.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'bee8c5a36ee6fd892040733b34cc088a3fbcd5f4')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+i83vXOkM08YwOTA9') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 
 #Channel & Group link 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+kF6kYm_7o_wxM2E1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Deendayal_dhakad')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Sorry_Sorry_Galti_Ho_Gai')
-DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/Sorry_Sorry_Galti_Ho_Gai')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+rL4ESddyLwZkYzll')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+RUHDDMNU3TY3ODQ1')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/I_Want_To_Be_Forever_Youngs')
+DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/+RUHDDMNU3TY3ODQ1')
 
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -86,7 +86,7 @@ MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 MSG_ALRT = environ.get('MSG_ALRT', 'Share & Support Us ♥️')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support group link ( make sure bot is admin )
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+rL4ESddyLwZkYzll') #Support group link ( make sure bot is admin )
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
