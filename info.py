@@ -70,7 +70,7 @@ IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+rL4ESddyLwZkYzll')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+RUHDDMNU3TY3ODQ1')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/I_Want_To_Be_Forever_Youngs')
-DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/+RUHDDMNU3TY3ODQ1')
+DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/+csVTXKmO7c40OTll')
 
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
